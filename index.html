@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Cadastro de Vendas</h1>
+
+            <div id="form" class="form">
+                <div id="input" class="input">
+                    <input type="text" id="vendedor" placeholder="Digite o nome" step="any" required>
+                    <input type="number" id="venda" step="any" placeholder="Digite o valor da venda" required>
+                </div>
+                <!-- Botões -->
+                <div class="button-group">
+                    <button class="btn-adicionar" onclick="adicionarObjeto()">➕ Cadastrar</button>
+                    <button class="btn-remover" onclick="removerObjeto()">➖ Remover Último</button>
+                    <button class="btn-limpar" onclick="limparLista()">🗑️ Limpar Tudo</button>
+                </div>
+                <h2>Status das Vendas</h2>
+                <div id="tabela" class="tabela">
+                    <!-- Informações -->
+                    <div class="info" id="info">
+                        Total de elementos: 0
+                    </div>
+                    <table id="tabelaVendas" class="tabelaVendas">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Vendedor
+                                </th>
+                                <th>
+                                    Desconto
+                                </th>
+                                <th>
+                                    Valor Final
+                                </th>
+                                <th>
+                                    Data
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpoTabela">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
